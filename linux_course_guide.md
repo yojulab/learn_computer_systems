@@ -97,9 +97,8 @@ graph TD
 graph LR
     A[Command] --> B[Options]
     B --> C[Arguments]
-    
     D[ls] --> E[-l -a]
-    E --> F[/home/user]
+    E --> F["/home/user"]
 ```
 
 ### 2.5 명령어 편집 기능
@@ -138,17 +137,17 @@ graph LR
 ### 3.1 리눅스 파일 시스템 구조
 - **계층적 디렉터리 구조**
   ```mermaid
-  graph TD
-      A[/] --> B[/bin]
-      A --> C[/etc]
-      A --> D[/home]
-      A --> E[/usr]
-      A --> F[/var]
-      A --> G[/tmp]
-      A --> H[/dev]
-      A --> I[/proc]
-      D --> J[/home/user1]
-      D --> K[/home/user2]
+graph TD
+    A["/"] --> B["/bin"]
+    A --> C["/etc"]
+    A --> D["/home"]
+    A --> E["/usr"]
+    A --> F["/var"]
+    A --> G["/tmp"]
+    A --> H["/dev"]
+    A --> I["/proc"]
+    D --> J["/home/user1"]
+    D --> K["/home/user2"]
   ```
 
 ### 3.2 주요 디렉터리 설명
